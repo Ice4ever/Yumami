@@ -1630,7 +1630,7 @@
 			background-position:fixed;
 			background-repeat:no-repeat;
 			background-attachment:fixed;
-			z-index: -1;
+			z-index: 1;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
