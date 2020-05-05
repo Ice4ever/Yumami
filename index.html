@@ -11,18 +11,7 @@
 	<body class="is-loading">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-						<h1>This is<br />
-						my first try</h1>
-						<p>Auf dieser Website möchte ich unsere Reisen und Erfahrungen teilen.<br />
-						Vom planen des Campers bis zu den Erlebnissen.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header">
@@ -158,14 +147,18 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="#">
+							<form method="post" action="contactform.php">
 								<div class="field">
 									<label for="name">Name</label>
 									<input type="text" name="name" id="name" />
 								</div>
 								<div class="field">
 									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
+									<input type="email" name="email" id="email" />
+								</div>
+                                <div class="field">
+									<label for="subject">Betreff</label>
+									<input type="text" name="subject" id="subject" />
 								</div>
 								<div class="field">
 									<label for="message">Message</label>
