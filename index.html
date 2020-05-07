@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <script defer src="assets/js/selfscript.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
@@ -24,8 +25,19 @@
 							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="AboutUs.html">About Us</a></li>
 							<li><a href="umbau.html">Camper Umbau</a></li>
-                            <li><a href="#">Reisetagebuch</a></li>
-						</ul>
+                                
+                            <div class="dropdown">
+                                    
+                                <li><a id="myBtn" class="dropbtn">Reisetagebuch</a></li>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="england.html">England</a>
+                                    <a href="oesterreich.html">Österreich</a>
+                                </div>
+                                
+                            </div>
+                        
+                        </ul>
+                        
 						<ul class="icons">
 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
@@ -49,7 +61,8 @@
 								</header>
 								<a class="image main"><img src="images/IMG_20170321_182152.jpg" alt="Hier sollte ein Bild zu sehen sein" /></a>
 							</article>
-
+                        
+                        
 						<!-- Posts -->
 							<section class="posts">
 								<article>
@@ -58,7 +71,7 @@
 										<h2><a href="england.html">England<br />
 										Die erste gemeinsame Reise</a></h2>
 									</header>
-									<a href="england.html" class="image fit"><img src="images/IMG_20170801_163214.jpg" alt="" /></a>
+									<a class="image fit"><img src="images/IMG_20170801_163214.jpg" alt="test" /></a>
 									<p>Von Ort zu Ort und von Wohnung zu Wohnung, das war unsere 10-tägige Reise durch England.</p>
 									<ul class="actions">
 										<li><a href="england.html" class="button">Full Story</a></li>
@@ -70,7 +83,7 @@
 										<h2><a href="oesterreich.html">Österreich<br />
 										Auszeit in den Bergen</a></h2>
 									</header>
-									<a href="oesterreich.html" class="image fit"><img src="images/DSC_0365.JPG" alt="" /></a>
+									<a class="image fit"><img src="images/DSC_0365.JPG" alt="" /></a>
 									<p>Ein Urlaub, in dem man mehr Kühe getroffen hat, als Menschen in unserem Dorf. Wandern, Sonne und Ruhe waren der Wunsch und genau das haben wir bekommen.</p>
 									<ul class="actions">
 										<li><a href="oesterreich.html" class="button">Full Story</a></li>
@@ -82,7 +95,7 @@
 										<h2><a href="#">Barcelona<br />
 										Coming Soon</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+									<a class="image fit"><img src="images/pic04.jpg" alt="" /></a>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
 									<ul class="actions">
 										<li><a href="#" class="button">Full Story</a></li>
@@ -94,7 +107,7 @@
 										<h2><a href="#">Teneriffa<br />
 								        Coming Soon</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+									<a class="image fit"><img src="images/pic05.jpg" alt="" /></a>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
 									<ul class="actions">
 										<li><a href="#" class="button">Full Story</a></li>
@@ -106,7 +119,7 @@
 										<h2><a href="#">Platzhalter<br />
 										Untertitel</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+									<a class="image fit"><img src="images/pic06.jpg" alt="" /></a>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
 									<ul class="actions">
 										<li><a href="#" class="button">Full Story</a></li>
@@ -118,7 +131,7 @@
 										<h2><a href="#">Platzhalter<br />
 										Untertitel</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+									<a class="image fit"><img src="images/pic07.jpg" alt="" /></a>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
 									<ul class="actions">
 										<li><a href="#" class="button">Full Story</a></li>
@@ -141,7 +154,6 @@
 								</div>
 							</footer>
                             -->
-
 					</div>
 
 				<!-- Footer -->
@@ -213,6 +225,22 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            
+        
+        <!-- MyScript -->
+        
+        <!-- Dropdown -->
+        <script>
+            document.getElementById("myBtn").onclick = function() {myFunction()};
+
+            function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+        </script>
+        
+        
+
+        
         <!-- <a href="https://twitter.com/ajlkn">@ajlkn</a>
         <a href="https://html5up.net">HTML5 UP</a>
         <a href="https://html5up.net/license">Creative Commons license</a>
