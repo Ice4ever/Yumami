@@ -3830,6 +3830,7 @@
 
 			}
 
+
 		@media screen and (max-width: 736px) {
 
 			#main > * {
@@ -3845,6 +3846,49 @@
 			}
 
 		}
+
+		#main .featured {
+             float: left;
+             width: 70%;
+            height: 100%;
+             background:;
+             box-sizing: border-box;
+            text-align: center;
+            border-color: #eeeeee;
+            border-style: solid;
+            border-top-width: 2px;
+            padding: 4rem 2rem 0 2rem;
+            }
+
+        #main .sidebar{
+            display: block;
+            float: right;
+            width: 30%;
+             background:;
+             box-sizing: border-box;
+            text-align: center;
+            border-color: #eeeeee;
+            border-left-width: 3px;
+            border-bottom-width: 3px;
+            border-style: solid;
+            border-top-width: 3px;
+            padding: 4rem 2rem 2rem 2rem;
+            margin-bottom: 8rem;
+        }
+
+@media screen and (max-width: 736px) {
+    
+    #main .sidebar{
+        width: 100%;
+    }
+    
+    #main .featured{
+        width: 100%;
+    }
+}
+
+
+
 
 /* Footer */
 
