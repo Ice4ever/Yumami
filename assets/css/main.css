@@ -1625,7 +1625,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-image:url("../../images/DSC_0461.JPG");
+			background-image:url("../../images/oesterreich/DSC_0461.JPG");
 			background-size:cover;
 			background-position:fixed;
 			background-repeat:no-repeat;
@@ -1682,7 +1682,7 @@
 		font-family: "Merriweather", Georgia, serif;
 		font-weight: 300;
 		font-size: 1rem;
-		line-height: 2.375;
+		line-height: 2;
 	}
 
 	a {
@@ -1708,7 +1708,7 @@
 
 	p {
 		text-align: justify;
-		margin: 0 0 2rem 0;
+		margin: 0 0 1.5rem 0;
         font-size: 90%;
 	}
 
@@ -2466,7 +2466,7 @@
 
 		.image.fit {
 			display: block;
-			margin: 2.5rem 0;
+			margin: 1.5rem 0;
 			width: 100%;
 		}
 
@@ -2480,7 +2480,7 @@
 
 		.image.main {
 			display:block;
-			margin: 2rem 0;
+			margin:0 0 0 0;
 			width: 100%;
             position: relative;
 		}
@@ -2490,10 +2490,23 @@
 			}
 
 			.image.main img {
-				width: 65%;
+				width: 60%;
                 margin-left: auto;
                 margin-right: auto;        
 			}
+
+            .image.haupt {
+			display:block;
+			margin: 2rem 0;
+			width: 100%;
+            position: relative;
+		  }
+			.image.haupt img {
+				width: 75%;
+                margin-left: auto;
+                margin-right: auto;        
+			}
+
 
 #lightbox{
     
@@ -2529,7 +2542,8 @@
 
 			.image.fit {
 				margin: 2rem 0;
-			}
+            }
+            
 
 			.image.main {
 				margin: 2rem 0;
@@ -2776,9 +2790,9 @@
 
 		header > .date {
 			display: block;
-			font-size: 0.8rem;
+			font-size: 0.7rem;
 			height: 1;
-			margin: 0 0 1rem 0;
+			margin: 0 0 0.5rem 0;
 			position: relative;
 		}
 
@@ -3087,7 +3101,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-image:url("../../images/DSC_0461.jpg");
+			background-image:url("../../images/%25C3%2596sterreich/DSC_0461.JPG");
 			background-size:100%;
 			background-position:top center;
 			background-repeat:no-repeat;
@@ -3667,7 +3681,6 @@
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
 
@@ -3729,14 +3742,14 @@
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
-			-moz-flex-wrap: wrap;
-			-webkit-flex-wrap: wrap;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
+			-moz-flex-wrap: nowrap;
+			-webkit-flex-wrap: nowrap;
+			-ms-flex-wrap: nowrap;
+			flex-wrap:nowrap;
 			-moz-align-items: stretch;
 			-webkit-align-items: stretch;
 			-ms-align-items: stretch;
-			align-items: stretch;
+			align-items:stretch;
 			text-align: center;
 			width: 100%;
 			padding: 0;
@@ -3758,31 +3771,44 @@
 			}
 
 			#main > .posts > * {
-				padding: 4rem;
+				padding: 2rem 2rem 0rem 2rem;
 				width: 50%;
 			}
 
-			#main > .posts > article {
+			#main > .posts > * {
 				border-color: #eeeeee;
-				border-left-width: 2px;
+				border-left-width: 0px;
 				border-style: solid;
 				border-top-width: 2px;
 				text-align: center;
 			}
 
+
 				#main > .posts > article > :last-child {
 					margin-bottom: 0;
 				}
 
-				#main > .posts > article:nth-child(2n - 1) {
-					border-left-width: 0;
+				#main > .posts > article:nth-child(-n + 1) {
+					border-top-width:;
 				}
 
-				#main > .posts > article:nth-child(-n + 2) {
-					border-top-width: 0;
+				#main > .posts > article:nth-child(-2n + 2) {
+                    border-left-width: 2px; 
 				}
+
+				#main > .posts > article:nth-child(n + 3) {
+					border-left-width: 2px;
+				}
+
 
 			@media screen and (max-width: 980px) {
+                
+                #main > .posts{
+                    -moz-flex-wrap: wrap;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                }
 
 				#main > .posts > * {
 					width: 50%;
@@ -3806,24 +3832,9 @@
 					width: 100%;
 				}
 
-				#main > .posts > article:nth-child(2n - 1) {
-					border-left-width: 2px;
-				}
-
-				#main > .posts > article:nth-child(-n + 2) {
-					border-top-width: 2px;
-				}
-
-				#main > .posts > article:nth-child(n) {
-					border-left-width: 0;
-				}
-
-				#main > .posts > article:nth-child(-n + 1) {
-					border-top-width: 0;
-				}
 
 				#main > .posts > article .image {
-					max-width: 25rem;
+					max-width: 30rem;
 					margin-left: auto;
 					margin-right: auto;
 				}
@@ -3852,12 +3863,8 @@
              width: 70%;
             height: 100%;
              background:;
-             box-sizing: border-box;
             text-align: center;
-            border-color: #eeeeee;
-            border-style: solid;
-            border-top-width: 2px;
-            padding: 4rem 2rem 0 2rem;
+            padding: 3rem 3rem 0rem 3rem;
             }
 
         #main .sidebar{
@@ -3867,24 +3874,112 @@
              background: #eaeaea;
              box-sizing: border-box;
             text-align: center;
-            border-color: #eeeeee;
+            border-color: #9d9d9d;
             border-left-width: 3px;
             border-bottom-width: 3px;
             border-style: solid;
-            border-top-width: 3px;
             padding: 4rem 2rem 2rem 2rem;
-            margin-bottom: 8rem;
         }
+
+
+#main .gallery {
+    			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: nowrap;
+			-webkit-flex-wrap: nowrap;
+			-ms-flex-wrap: nowrap;
+			flex-wrap:nowrap;
+			-moz-align-items: stretch;
+			-webkit-align-items: stretch;
+			-ms-align-items: stretch;
+			align-items:stretch;
+			text-align: center;
+			width: 100%;
+			padding:0;
+}
+
+
+#main .gallery div{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    border-color: #eeeeee;
+    border-style: solid;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    
+}
+
+#main .gallery div:nth-child(n){
+    padding-left: 0.3rem;
+}
+
+#main .gallery div:nth-child(n + 4){
+    padding-right: 0.3rem;
+}
+
+#main .objekte {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap:wrap;
+    align-items:stretch;
+    text-align: center;
+    padding: 3rem;
+    
+   
+    
+}
+
+#main .album{
+    position:relative;
+    background-color:;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+    padding: 0.2rem;
+        
+}
+
+#main .album p{
+    margin:0;
+    font-size: 25px;
+    text-align: center;
+    background-color: #eeee;
+}
+
+
+
+
+
 
 @media screen and (max-width: 736px) {
     
     #main .sidebar{
         width: 100%;
+        border-color: #9d9d9d;
+        border-right-width: 3px;
+        border-top-width: 3px;
+        border-style: solid;
+        
     }
     
     #main .featured{
         width: 100%;
     }
+
+#main .gallery{
+    display: none;
+}
 }
 
 
@@ -4140,6 +4235,7 @@
 			flex-shrink: 1;
 			padding: 4rem 4rem 2rem 4rem ;
 			border-left: solid 2px #e2e2e2;
+            border-top: solid 2px #e2e2e2;
 		}
 
 			#footer > section:first-child {
