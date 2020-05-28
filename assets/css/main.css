@@ -3095,7 +3095,7 @@
 		/* overflow: hidden; */
 	}
 
-	/*	#wrapper > .bg {
+		#wrapper > .bg {
 			position:absolute;
 			top: 0;
 			left: 0;
@@ -3114,7 +3114,7 @@
 				width: 10%;
 				height: 10%;
                 background-size: auto;
-			} */
+			} 
 
 		#wrapper.fade-in:before {
 			-moz-pointer-events: none;
@@ -3980,6 +3980,11 @@
 #main .gallery{
     display: none;
 }
+    #main .box.alt div{
+        width: 
+        
+    }
+    
 }
 
 
