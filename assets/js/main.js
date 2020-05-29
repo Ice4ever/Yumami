@@ -18,7 +18,7 @@
 
 	/*
  Applies parallax scrolling to an element's background image. */
-	 @return {jQuery} jQuery object.
+	/* @return {jQuery} jQuery object. */
 	
 	$.fn._parallax = function(intensity) {
 
@@ -47,7 +47,7 @@
 				on, off;
 
 			on = function() {
-
+/*
 				$bg
 					.removeClass('fixed')
 					.css('transform', 'matrix(1,0,0,1,0,0)');
@@ -60,8 +60,8 @@
 						$bg.css('transform', 'matrix(1,0,0,1,0,' + (pos * intensity) + ')');
 
 					});
-
-			};
+*/
+			}; 
 
 			off = function() {
 
