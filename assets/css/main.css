@@ -2450,7 +2450,7 @@
 
 			.image.left img, .image.right img {
 				width: 100%;
-			}
+        }
 
 		.image.left {
 			float: left;
@@ -2507,6 +2507,19 @@
                 margin-right: auto;        
 			}
 
+.image.hochkant {
+    display: block;
+    margin: 0 0 0 0;
+    width: 100%;
+    position: relative;
+}
+
+.image.hochkant img{
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 #lightbox{
     
@@ -2544,12 +2557,24 @@
 				margin: 2rem 0;
             }
             
+            .image.left, .image.right {
+			max-width: 100%;
+		}
 
 			.image.main {
 				margin: 2rem 0;
 			}
             
             .image.main img{
+                width: 100%;
+            }
+            
+            .image.hochkant {
+				margin: 2rem 0;
+                
+			}
+            
+            .image.hochkant img{
                 width: 100%;
             }
             
